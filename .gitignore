@@ -1,3 +1,10 @@
+# @2024, bysrkh. Cirebon, Indonesia
+
+# excludes npm module cache directory
 /node_modules/
+
+# excludes generated static files
 /dist
+
+# excludes Jetbrains local preference
 /.idea/

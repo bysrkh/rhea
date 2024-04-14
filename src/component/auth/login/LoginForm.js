@@ -35,18 +35,29 @@ const   LoginForm = (props) => {
     }
 
     return (<>
-        {isLoading && <p>data is on loading</p>}
-        <form method="POST" onSubmit={fireOnSubmitLogin}>
-            <div className="relative">
-                <label>username</label>
-                <input type="text" name="username" value={state.username.value}
-                       onChange={fireOnChange}
-                       className="-border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500 transition duration-300"/>
+        <form className="col-lg-2 align-self-center mx-auto bg-body-tertiary"
+              method="POST" onSubmit={fireOnSubmitLogin}>
+            <div className="row">
+                <label className="col-lg-3 col-form-label-lg"
+                       htmlFor="username">Username</label>
+                <div className="col-lg-9">
+                    <input className="form-control" type="text" name="username"
+                           value={state.username.value}
+                           onChange={fireOnChange}/>
+                </div>
+            </div>
+            <div className="row">
+                <label className="col-lg-3 col-form-label-lg"
+                       htmlFor="username">Password</label>
+                <div className="col-lg-9">
+                    <input className="form-control" type="text" name="username"
+                           value={state.username.value}
+                           onChange={fireOnChange}/>
+                </div>
             </div>
 
-            <button type="submit"
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Log
-                In!
+            <button className="btn btn-success" type="submit">
+                Login
             </button>
         </form>
 

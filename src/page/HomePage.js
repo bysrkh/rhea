@@ -7,7 +7,6 @@ const HomePage = () => {
         <>
             <p>Welcome to our page</p>
             <button className="btn btn-primary"></button>
-            <LoginForm/>
         </>
     )
 }
